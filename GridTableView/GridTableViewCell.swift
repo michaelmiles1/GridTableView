@@ -8,6 +8,7 @@
 import UIKit
 
 class GridTableViewCell: UITableViewCell {
+    @IBOutlet weak var leadingMarginWidth: NSLayoutConstraint!
     
     weak var delegate: GridTVCDelegate? = nil
 

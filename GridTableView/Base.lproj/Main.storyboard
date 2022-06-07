@@ -16,26 +16,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="GridTVC" id="lAL-YJ-UVc" customClass="GridTableViewCell" customModule="GridTableView" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="414" height="45.5"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="45"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lAL-YJ-UVc" id="wXA-04-FjN">
-                                    <rect key="frame" x="0.0" y="0.0" width="414" height="45.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="45"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="&lt;Time&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjF-WJ-2yo">
-                                            <rect key="frame" x="20" y="0.0" width="60" height="17"/>
-                                            <constraints>
-                                                <constraint firstAttribute="width" constant="60" id="M7D-5e-QOE"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                         <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="dY1-yp-kz4">
-                                            <rect key="frame" x="96" y="8" width="298" height="37.5"/>
+                                            <rect key="frame" x="100" y="8" width="294" height="37"/>
                                             <subviews>
                                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1d-CO-wp0" customClass="GridButton" customModule="GridTableView" customModuleProvider="target">
-                                                    <rect key="frame" x="0.0" y="0.0" width="37.5" height="37.5"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="37" height="37"/>
                                                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="h1d-CO-wp0" secondAttribute="height" multiplier="1:1" id="V95-0X-5gb"/>
@@ -50,7 +41,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UuU-oU-x8K" customClass="GridButton" customModule="GridTableView" customModuleProvider="target">
-                                                    <rect key="frame" x="43.5" y="0.0" width="37.5" height="37.5"/>
+                                                    <rect key="frame" x="43" y="0.0" width="37" height="37"/>
                                                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="UuU-oU-x8K" secondAttribute="height" multiplier="1:1" id="4he-Cn-xvg"/>
@@ -65,7 +56,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xaf-p5-Duc" customClass="GridButton" customModule="GridTableView" customModuleProvider="target">
-                                                    <rect key="frame" x="87" y="0.0" width="37.5" height="37.5"/>
+                                                    <rect key="frame" x="86" y="0.0" width="37" height="37"/>
                                                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="Xaf-p5-Duc" secondAttribute="height" multiplier="1:1" id="40N-Oz-3Rg"/>
@@ -80,7 +71,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sKi-5v-wrU" customClass="GridButton" customModule="GridTableView" customModuleProvider="target">
-                                                    <rect key="frame" x="130.5" y="0.0" width="37.5" height="37.5"/>
+                                                    <rect key="frame" x="129" y="0.0" width="37" height="37"/>
                                                     <color key="backgroundColor" systemColor="systemPurpleColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="sKi-5v-wrU" secondAttribute="height" multiplier="1:1" id="GhM-HX-RwP"/>
@@ -95,7 +86,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2tG-M3-deT" customClass="GridButton" customModule="GridTableView" customModuleProvider="target">
-                                                    <rect key="frame" x="174" y="0.0" width="37.5" height="37.5"/>
+                                                    <rect key="frame" x="172" y="0.0" width="37" height="37"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="2tG-M3-deT" secondAttribute="height" multiplier="1:1" id="48a-0s-uHQ"/>
@@ -110,7 +101,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IXl-UT-oXP" customClass="GridButton" customModule="GridTableView" customModuleProvider="target">
-                                                    <rect key="frame" x="217.5" y="0.0" width="37.5" height="37.5"/>
+                                                    <rect key="frame" x="215" y="0.0" width="37" height="37"/>
                                                     <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="IXl-UT-oXP" secondAttribute="height" multiplier="1:1" id="hQx-yO-cYp"/>
@@ -125,7 +116,7 @@
                                                     </connections>
                                                 </button>
                                                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7wI-aC-Gm2" customClass="GridButton" customModule="GridTableView" customModuleProvider="target">
-                                                    <rect key="frame" x="261" y="0.0" width="37" height="37.5"/>
+                                                    <rect key="frame" x="258" y="0.0" width="36" height="37"/>
                                                     <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" secondItem="7wI-aC-Gm2" secondAttribute="height" multiplier="1:1" id="Xnd-cP-YoZ"/>
@@ -141,16 +132,38 @@
                                                 </button>
                                             </subviews>
                                         </stackView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Bda-Qg-XaJ">
+                                            <rect key="frame" x="0.0" y="0.0" width="100" height="45"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="&lt;Time&gt;" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjF-WJ-2yo">
+                                                    <rect key="frame" x="16" y="0.0" width="49.5" height="17"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BjF-WJ-2yo" secondAttribute="trailing" constant="12" id="9MX-K2-ENi"/>
+                                                <constraint firstAttribute="width" constant="100" id="Kgu-3A-gMb"/>
+                                                <constraint firstItem="BjF-WJ-2yo" firstAttribute="leading" secondItem="Bda-Qg-XaJ" secondAttribute="leading" constant="16" id="rUk-Ff-TLl"/>
+                                                <constraint firstItem="BjF-WJ-2yo" firstAttribute="top" secondItem="Bda-Qg-XaJ" secondAttribute="top" id="tGu-XX-KVS"/>
+                                            </constraints>
+                                        </view>
                                     </subviews>
                                     <constraints>
+                                        <constraint firstItem="Bda-Qg-XaJ" firstAttribute="top" secondItem="wXA-04-FjN" secondAttribute="top" id="86a-Vw-rkZ"/>
+                                        <constraint firstAttribute="bottom" secondItem="Bda-Qg-XaJ" secondAttribute="bottom" id="8Zj-f7-YzU"/>
                                         <constraint firstAttribute="trailing" secondItem="dY1-yp-kz4" secondAttribute="trailing" constant="20" symbolic="YES" id="9cS-HB-eAz"/>
-                                        <constraint firstItem="dY1-yp-kz4" firstAttribute="leading" secondItem="BjF-WJ-2yo" secondAttribute="trailing" constant="16" id="ADX-tm-hV1"/>
-                                        <constraint firstItem="BjF-WJ-2yo" firstAttribute="top" secondItem="wXA-04-FjN" secondAttribute="top" id="HG3-Pq-qei"/>
-                                        <constraint firstItem="BjF-WJ-2yo" firstAttribute="leading" secondItem="wXA-04-FjN" secondAttribute="leading" constant="20" id="kwS-oZ-lYm"/>
+                                        <constraint firstItem="dY1-yp-kz4" firstAttribute="leading" secondItem="Bda-Qg-XaJ" secondAttribute="trailing" id="jvA-va-IiK"/>
+                                        <constraint firstItem="Bda-Qg-XaJ" firstAttribute="leading" secondItem="wXA-04-FjN" secondAttribute="leading" id="uxz-vZ-ZXl"/>
                                         <constraint firstItem="dY1-yp-kz4" firstAttribute="top" secondItem="wXA-04-FjN" secondAttribute="top" constant="8" id="vQW-iy-z1D"/>
                                         <constraint firstAttribute="bottom" secondItem="dY1-yp-kz4" secondAttribute="bottom" id="vzH-PI-k8r"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="leadingMarginWidth" destination="Kgu-3A-gMb" id="NVp-e7-bai"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -188,6 +201,9 @@
         </designable>
     </designables>
     <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemPurpleColor">
             <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

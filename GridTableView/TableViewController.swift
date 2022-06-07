@@ -8,6 +8,8 @@
 import UIKit
 
 class TableViewController: UITableViewController {
+    
+    private static let LEFT_MARGIN_WIDTH: CGFloat = 100
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,12 +27,15 @@ class TableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "GridTVC", for: indexPath) as! GridTableViewCell
+        cell.leadingMarginWidth.constant = TableViewController.LEFT_MARGIN_WIDTH
         cell.delegate = self
         return cell
     }
     
     override func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        return UINib(nibName: "WeekDayHeaderView", bundle: nil).instantiate(withOwner: nil)[0] as? UIView
+        let view = UINib(nibName: "WeekDayHeaderView", bundle: nil).instantiate(withOwner: nil)[0] as? WeekDayHeaderView
+        view?.leadingMarginConstraint.constant = TableViewController.LEFT_MARGIN_WIDTH
+        return view
     }
 
 }
