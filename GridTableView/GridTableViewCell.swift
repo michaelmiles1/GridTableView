@@ -22,13 +22,8 @@ class GridTableViewCell: UITableViewCell {
         // Configure the view for the selected state
     }
 
-    @IBAction func gridButtonPressed(_ sender: UIButton) {
-        if sender.backgroundColor == .systemPurple {
-            sender.backgroundColor = .lightGray
-        }
-        else {
-            sender.backgroundColor = .systemPurple
-        }
+    @IBAction func gridButtonPressed(_ sender: GridButton) {
+        sender.dateSelected = !sender.dateSelected
         delegate?.buttonPressed(tag: sender.tag)
     }
 }
