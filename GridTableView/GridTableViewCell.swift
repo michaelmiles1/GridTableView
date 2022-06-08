@@ -9,18 +9,14 @@ import UIKit
 
 class GridTableViewCell: UITableViewCell {
     @IBOutlet weak var leadingMarginWidth: NSLayoutConstraint!
+    @IBOutlet weak var timeLabel: UILabel!
     
     weak var delegate: GridTVCDelegate? = nil
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+        clipsToBounds = false
+        contentView.clipsToBounds = false
     }
 
     @IBAction func gridButtonPressed(_ sender: GridButton) {
